@@ -1,0 +1,41 @@
+.main{
+    // background-color:lightblue;
+    .main-heading{
+        font-size: 2em;
+    }
+
+    .main-paragraf{
+        font-size: 1.4em;
+    }
+
+}
+
+.main, footer{
+    letter-spacing: 1px;
+}
+
+// & =parent selector
+
+.main{
+    .container &{
+        background-color: lightblue;
+    }
+    .main-heading{
+        color: blue;
+    }
+    // penggunaan sudo class dengan parent selector
+    &:hover{
+        background-color: salmon;
+    }
+}
+.footer{
+    color: red;
+ & &-heading{
+        background-color:lightblue;
+    }
+
+    & &-paragraf{
+        background-color: lightgreen;
+        letter-spacing: 1px;
+    }
+}
