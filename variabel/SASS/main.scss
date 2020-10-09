@@ -1,0 +1,57 @@
+// // variabel pada css
+
+// :root{
+//     // nama variabel : primary-color
+//     --primary-color: lightblue;
+//     --second-color:lightgreen;
+//     --text-color: blue;
+// }
+
+// body{
+//     background-color: var(--primary-color);
+//     color: var(--text-color);
+// }
+
+
+// variable SASS
+//bersifat variable global
+
+$primary-color: lightblue;
+$text-color: blue;
+
+//penggunaan map
+
+$alert: (
+    'danger':red,
+    "success": blue,
+    'warning': orange
+);
+
+.container{
+    background-color: $primary-color;
+    .map-heading{
+        background-color: map-get($alert,"success");
+    }
+    .main-heading{
+        //variable local
+        $text-colorr :red;
+        color: $text-colorr;
+    }
+    .main-paragraf{
+        letter-spacing: 1px;
+        font-size: 50px;
+    }
+    
+    &:hover{
+        background-color: salmon;
+    }
+    
+}
+.footer{
+    // lokal variable to global variable
+    $second-color: green !global;
+    background-color: $second-color;
+}
+p{
+    background-color: $second-color;
+}

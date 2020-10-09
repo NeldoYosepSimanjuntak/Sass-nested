@@ -1,0 +1,29 @@
+.container {
+  background-color: lightblue;
+}
+
+.container .map-heading {
+  background-color: blue;
+}
+
+.container .main-heading {
+  color: red;
+}
+
+.container .main-paragraf {
+  letter-spacing: 1px;
+  font-size: 50px;
+}
+
+.container:hover {
+  background-color: salmon;
+}
+
+.footer {
+  background-color: green;
+}
+
+p {
+  background-color: green;
+}
+/*# sourceMappingURL=main.css.map */
